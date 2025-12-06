@@ -4,11 +4,11 @@ function Form({ onSubmit }) {
     const [country, setCountry] = useState("");
     const [pokemon, setPokemon] = useState("");
     const [city, setCity] = useState("");
-    const [launches, setLaunches] = useState(5);
+    ;
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onSubmit({ country, pokemon, city, launches });
+        onSubmit({ country, pokemon, city });
     };
 
     return (
