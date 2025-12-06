@@ -14,13 +14,13 @@ function Form({ onSubmit }) {
     return (
         <form onSubmit={handleSubmit}>
             <label>Nombre del país:</label>
-            <input value={country} onChange={(e) => setCountry(e.target.value)} />
+            <input value={country} onChange={(e) => setCountry(e.target.value)} required />
 
             <label>Nombre del Pokémon:</label>
-            <input value={pokemon} onChange={(e) => setPokemon(e.target.value)} />
+            <input value={pokemon} onChange={(e) => setPokemon(e.target.value)} required />
 
             <label>Ciudad para clima:</label>
-            <input value={city} onChange={(e) => setCity(e.target.value)} />
+            <input value={city} onChange={(e) => setCity(e.target.value)} required />
 
             <button type="submit">Consultar</button>
         </form>
